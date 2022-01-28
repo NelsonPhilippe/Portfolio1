@@ -6,7 +6,7 @@ $(window).resize(() =>{
     let width = window.innerWidth;
 
 
-    if(width <= 650){
+    if(width <= 900){
         //close
         navbar.style.left = "-20%";
     }else {
