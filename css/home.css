@@ -2,12 +2,14 @@
 
 .home{
     margin-left: 20%;
-    width: 80%;
-    height: 100%;
+    width: 80vw;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding: 0;
+    overflow: hidden;
 }
 
 canvas{
@@ -23,7 +25,7 @@ canvas{
 
 .home img{
     position: relative;
-    margin-top: 5%;
+    margin-top: -20%;
     border-radius: 50%;
     width: 15%;
     height: auto;
@@ -39,8 +41,87 @@ canvas{
 }
 
 .home h2{
-    color: white;
+    color: #5DADE2;
     font-family: 'Revalia', cursive;
     opacity: 1;
     z-index: 2;
+}
+
+#github{
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    z-index: 3;
+    left: 25%;
+    top: -5vh;
+    transition: top 1s;
+
+}
+
+#github img{
+    width: 100%;
+    height: auto;
+}
+
+#twitter{
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    z-index: 3;
+    left: 30%;
+    top: -5vh;
+    transition: top 1.5s;
+
+}
+
+#twitter img{
+    width: 100%;
+    height: auto;
+}
+
+
+#linkedin{
+    position: absolute;
+    width: 3%;
+    height: 3%;
+    z-index: 3;
+    left: 35%;
+    top: -5vh;
+    transition: top 2s;
+
+}
+
+#linkedin img{
+    width: 100%;
+    height: auto;
+}
+
+#fullstack{
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-family: 'Revalia', cursive;
+    right: -20vw;
+    top: 60vh;
+    transition: right 2s;
+}
+
+
+#java{
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-family: 'Revalia', cursive;
+    bottom: -10vh;
+    transition: bottom 1s;
+}
+
+#nodejs{
+    position: absolute;
+    z-index: 5;
+    color: white;
+    font-family: 'Revalia', cursive;
+    left: -20vw;
+    top: 65vh;
+    transition: left 1.5s;
 }
