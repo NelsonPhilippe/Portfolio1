@@ -1,4 +1,10 @@
+body{
+    overflow: hidden;
+}
 
+#home{
+    background-color: #5DADE2;
+}
 
 .home{
     margin-left: 20%;
