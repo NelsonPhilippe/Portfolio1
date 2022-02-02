@@ -1,7 +1,8 @@
 .navbar {
     position: fixed;
     left: 0;
-    width: 20%;
+    top: 0;
+    width: 20vw;
     height: 100%;
     /* background-color: ; */
     background: linear-gradient(to right, #060831, #17202A, #17202A);

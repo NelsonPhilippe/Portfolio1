@@ -9,8 +9,7 @@ $(window).on('load', () => {
     github.style.top = "5vh";
     linkedin.style.top = "5vh";
     twitter.style.top = "5vh";
-    fullstack.style.right = "15vw"
+    fullstack.style.marginRight = "-40%"
     java.style.bottom = "20vh"
-    nodejs.style.left = "30vw"
-
+    nodejs.style.marginLeft = "-40%"
 })

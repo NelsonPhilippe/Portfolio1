@@ -24,7 +24,7 @@ canvas {
     flex-direction: column;
     align-items: center;
     margin-left: 19%;
-    width: 80%;
+    width: 100%;
     height: 100%;
     padding: 0;
     overflow: hidden;
@@ -42,11 +42,13 @@ canvas {
 
 
 
-.presentation img {
+#img-illu {
     width: 45%;
     height: 40%;
     z-index: 2;
     border-radius: 10px;
+    opacity: 0;
+    transition: opacity 2s;
 }
 
 .p-content {
@@ -99,7 +101,7 @@ canvas {
     font-family: 'Times New Roman', Times, serif;
     color: white;
     letter-spacing: 1px;
-    line-height: 150%;
+    line-height: 180%;
 }
 
 .backpro {
@@ -122,4 +124,19 @@ canvas {
     color: white;
     letter-spacing: 1px;
     line-height: 150%;
+}
+
+.backpro ul{
+    overflow: hidden;
+    margin-top: 0;
+}
+
+#li-back-qg{
+    margin-left: -150vw;
+    transition: margin-left 1s;
+}
+
+#li-back-stage{
+    margin-left: -150vw;
+    transition: margin-left 1s;   
 }

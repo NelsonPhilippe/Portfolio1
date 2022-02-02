@@ -1,0 +1,27 @@
+body {
+    overflow-x: hidden;
+}
+
+
+canvas {
+    width: 100% !important;
+    height: 100%;
+    display: block;
+    z-index: 1;
+}
+
+#competence{
+    background-color: #5DADE2;
+}
+
+.competence {
+    margin-left: 20%;
+    width: 80vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0;
+    overflow: hidden;
+}
