@@ -4,7 +4,6 @@ const img = document.getElementById('img-illu');
 const li_back_qg = document.getElementById('li-back-qg')
 const ul_pre = document.getElementById('ul-pre');
 const li_back_stage = document.getElementById('li-back-stage');
-var canvas = document.querySelector('canvas')
 
 
 $(window).on('load', () => {
@@ -16,37 +15,48 @@ $(window).on('load', () => {
     li_back_stage.style.marginLeft = "0vw";
 })
 
-$(window).on('scroll', () => {
-    // if(isInViewport(ul_pre)){
-    //    li_back_qg.style.marginLeft = "0vw";
-    //    li_back_stage.style.marginLeft = "0vw";
-
-    //    console.log('test');
-    // }else {
-    //     li_back_qg.style.marginLeft = "-150vw";
-    //     li_back_stage.style.marginLeft = "-150vw";
-    // }
-
-    // if(isInViewport(li_back_qg)){
-    //     li_back_qg.style.marginLeft = "0vw";
-    // }else {
-    //     li_back_qg.style.marginLeft = "-150vw";
-
-    // }
 
 
-    // if(isInViewport(li_back_stage)){
-    //     li_back_stage.style.marginLeft = "0vw";
-    // }else {
-    //     li_back_stage.style.marginLeft = "-150vw";
+const navbar = document.getElementById('nav');
+const presentation = document.getElementById('presentation-c');
+var canvas = document.querySelector('canvas');
 
-    // }
-
-})
 
 $(window).resize(() =>{
-    canvas.style.width = "100%";
+    
+    let width = window.innerWidth;
+
+    // if(width >= 2000){
+    //     navbar.style.width = "15%";
+    // }else {
+    //     navbar.style.width = "20%"
+    // }
+
+    if(width <= 1100){
+        //close
+    
+        navbar.style.left = "-40vw";
+        canvas.style.width = "100vw"
+        canvas.style.overflow = "hidden"
+        presentation.style.width = "100vw"
+        presentation.style.left = "0"
+    }else {
+
+        //open
+        navbar.style.left = "0%";
+        canvas.style.width = "100%"
+        canvas.style.overflow = "hidden"
+        presentation.style.width = "80vw"
+        presentation.style.left = "20vw"
+
+    }
+
+
 })
+
+
+
+
 
 
 function isInViewport(element) {
