@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nelson Philippe - Développeur Fullstack et Java</title>
+    <link rel="stylesheet" href="./css/_common.css">
+    <link rel="stylesheet" href="./css/navbar.css">
+    <link rel="stylesheet" href="./css/contact.css">
+</head>
+<body>
+    <section class="navbar" id="nav">
+        <ul>
+           <a href="./index.html"><li>Home</li></a>
+           <a href="./presentation.html"><li>Présentation</li></a>
+           <a href="./competence.html"><li>Compétence</li></a>
+           <a href="./portfolio.html"><li>Portfolio</li></a>
+           <a href=""  id="contact"><li>Contacts</li></a>
+        </ul>
+    </section>
+
+    <section class="contact" id="contact-c">
+        <canvas></canvas>
+        <div class="contact-container">
+            <form action="./mail.php" method="POST">
+                <input type="email" name="from" id="from">
+                <input type="text" name="topic", id="topic">
+                <input type="text" name="text" id="text">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="./js/matrice.js"></script>
+</body>
+</html>
