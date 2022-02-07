@@ -16,11 +16,12 @@ for (var i = 0; i < columns; i++) {
 }
 
 function draw() {
+  
     ctx.fillStyle = 'rgba(23, 32, 42, 0.1)';
     ctx.fillRect(0, 0, canvas.width, canvas.height);
   for (var i = 0; i < drops.length; i++) {
     var text = letters[Math.floor(Math.random() * letters.length)];
-    ctx.fillStyle = '#FFFFFF';
+    ctx.fillStyle = '#54547A';
     ctx.fillText(text, i * fontSize, drops[i] * fontSize);
     drops[i]++;
     if (drops[i] * fontSize > canvas.height && Math.random() > .95) {
