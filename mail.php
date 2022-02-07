@@ -3,15 +3,14 @@
 $from = $_POST['from'];
 $topic = $_POST['topic'];
 $text = $_POST['text'];
+$name = $_POST['name'];
 
-// print_r(realpath("./credentials.json");
 $file = file_get_contents("credentials.json");
 
 
 
 $secret = json_decode($file)->secret;
 
-// var_dump($secret);
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
@@ -37,19 +36,11 @@ try {
     $mail->Port       = 465;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
 
     //Recipients
-    $mail->setFrom($from , 'Mailer');
-    $mail->addAddress('contact@neldev.fr', 'Joe User');     //Add a recipient
-    // $mail->addAddress('ellen@example.com');               //Name is optional
-    // $mail->addReplyTo('info@example.com', 'Information');
-    // $mail->addCC('cc@example.com');
-    // $mail->addBCC('bcc@example.com');
-
-    // //Attachments
-    // $mail->addAttachment('/var/tmp/file.tar.gz');         //Add attachments
-    // $mail->addAttachment('/tmp/image.jpg', 'new.jpg');    //Optional name
+    $mail->setFrom($from , $name);
+    $mail->addAddress('contact@neldev.fr', 'Philippe Nelson');
 
     //Content
-    $mail->isHTML(true);                                  //Set email format to HTML
+    $mail->isHTML(true);                               
     $mail->Subject = $topic;
     $mail->Body    = $text;
     $mail->AltBody = $text;
